@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<style>
+    .headstyle {
+        color: rgb(255, 255, 255);
+        font-variant: petite-caps;
+        background-color: rgb(0, 0, 0, 0.8);
+        margin-bottom: 0px
+    }
+
+    .divstyle {
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 1px;
+        margin-right: 1px
+    }
+    .bgColor{
+        background-color: black;
+    }
+    .text-truncate:hover {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: inherit;
+  }
+  .navbar{
+    background-color: black;
+  }
+  .card-body{
+    background-color: black;
+  }
+  .img1{
+    background-color: black;
+  }
+</style>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>HealthCure</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Diagnosify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item">
+                    <a class="nav-link px-3" aria-current="page" href="/">Home</a>
+                </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link px-3" aria-current="page" href="/appointment">Appointment</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link px-3" aria-current="page" href="/chatbot">Chatbot</a>
+                </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <div class="bgColor">
+      
+        <h1 class="text-center display-2 text-white pt-5">Diagnosify</h1>
+        <p class="pb-5 text-center pt-2 display-6" style='color: grey; font-size: 21px;'>Fast and Accurate Disease Detection at Your Fingertips.</p>
+       <!-- <center>
+        <form id="search-form">
+          <input type="text" id="query" placeholder="Enter your query">
+          <input type="submit" value="Search">
+     </form>
+     <div class="container mx-auto px-5 text-center pt-3 text-white display-6" id="response"></div>
+  
+     <script>
+      document.getElementById("search-form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          var query = document.getElementById("query").value;
+          if (query) {
+              fetch("/search", {
+                  method: "POST",
+                  body: JSON.stringify({query: query}),
+                  headers: {
+                      "Content-Type": "application/json"
+                  }
+              })
+              .then(response => response.json())
+              .then(data => {
+                  document.getElementById("response").textContent = data.content;
+              })
+              .catch(error => {
+                  console.log("Error:", error);
+              });
+          }
+      });
+     </script>
+      </center> -->
+
+        <p class="container mx-auto px-5 text-center pt-3 text-white display-6" style="font-size: 19px; line-height: 33px;">Diagnosify is an advanced disease detection application designed to help users identify various illnesses, including COVID-19, heart disease, brain tumors, breast cancer, and more. Utilizing cutting-edge technologies and intelligent algorithms, the app offers a user-friendly interface that allows individuals to input their symptoms, medical history, and relevant data for analysis. By leveraging machine learning and data analysis techniques, Diagnosify provides accurate and timely results, assisting users in understanding their health conditions. </p>
+        <p class="container mx-auto px-5 text-center pt-3 pb-5 text-white display-6" style="font-size: 19px; line-height: 33px;">The app includes an exciting booking system feature, designed to enhance the user experience and streamline the process of scheduling appointments. With this new functionality, users can easily book appointments for medical consultations, tests, or procedures directly through the app. </p>
+        
+              <div class="container overflow-hidden text-center pt-3">
+                <div class="row gy-5">
+                  <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="../static/icons/covid.jpg" class="p-4 card-img-top img1" alt="..." style="height: 400px;">
+                            <div class="card-body">
+                              <h5 class="card-title text-white">COVID-19</h5>
+                              <p class="card-text text-truncate text-white" style="font-size: 17px;">
+                                COVID-19 is a highly contagious respiratory illness caused by the novel coronavirus SARS-CoV-2. It spreads through respiratory droplets and can cause fever, cough, fatigue, and more. Severe cases can lead to pneumonia and respiratory failure, particularly in vulnerable individuals. Preventive measures like masks, distancing, handwashing, and vaccination are vital. Vaccines have helped curb the severity and spread. Ongoing research enhances our understanding and treatment options for COVID-19.<br>Detect the presence of COVID 19 using our application.</p>
+                              <a href="/covid" class="btn btn-dark">Consult</a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="../static/icons/cancer.jpg" class="p-4 card-img-top img1" alt="..."  style="height: 400px;">
+                            <div class="card-body">
+                              <h5 class="card-title text-white">Breast Cancer</h5>
+                              <p class="card-text text-truncate text-white" style="font-size: 17px;">
+                                Breast cancer is a prevalent form of cancer that primarily affects women, but it can also occur in men. It originates in the breast cells and can manifest as a lump or thickening in the breast or armpit. Other potential signs include changes in breast size or shape, nipple changes, or breast pain. Early detection through regular screenings, such as mammograms, and self-examinations significantly improves treatment outcomes. Treatment options for breast cancer may include surgery, radiation therapy, chemotherapy, targeted therapy, or hormone therapy, depending on the stage and characteristics of the cancer. Breast cancer awareness and access to screenings are essential in promoting early detection and improving survival rates.<br>Our application has the ability to detect the presence of breast cancer.</p>
+                              <a href="/breastcancer" class="btn btn-dark">Consult</a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="../static/icons/brain-tumor.jpg" class="p-4 card-img-top img1" alt="..."  style="height: 400px;">
+                            <div class="card-body">
+                              <h5 class="card-title text-white">Brain Tumor</h5>
+                              <p class="card-text text-truncate text-white" style="font-size: 17px;">Brain tumors refer to the abnormal growth of cells within the brain. These tumors can be either cancerous (malignant) or non-cancerous (benign), and they can develop in different parts of the brain. Brain tumors can cause a variety of symptoms depending on their location and size, including headaches, seizures, cognitive difficulties, changes in behavior, and neurological deficits. Early detection and diagnosis of brain tumors are crucial for timely treatment and improved outcomes. Advanced medical technologies, such as imaging techniques and intelligent algorithms, play a significant role in aiding the detection and diagnosis of brain tumors, leading to more effective interventions and better patient care.<br> Our application has the capability to identify the presence of brain tumors.</p>
+                              <a href="/braintumor" class="btn btn-dark">Consult</a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card w-100" style="width: 18rem;">
+                                    <img src="../static/icons/diabetes1.jpeg" class="p-4 card-img-top img1" alt="..."  style="height: 400px;">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-white">Diabetes</h5>
+                                      <p class="card-text text-truncate text-white" style="font-size: 17px;">
+                                        Diabetes is a chronic condition affecting blood sugar regulation. Types include type 1 and type 2. Symptoms include frequent urination, increased thirst, and fatigue. Proper management is crucial to prevent complications like heart disease and kidney damage. Treatment involves medication, diet, exercise, and regular monitoring. <br> "Our application is equipped to identify the presence of diabetes."</p>
+                                      <a href="/diabetes" class="btn btn-dark">Consult</a>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                 
+                  <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="../static/icons/pneumonia1.jpeg" class="p-4 card-img-top img1" alt="..."  style="height: 400px;">
+                            <div class="card-body">
+                              <h5 class="card-title text-white">Pneumonia</h5>
+                              <p class="card-text text-truncate text-white" style="font-size: 17px;">
+                                Pneumonia is a common respiratory infection that affects the lungs. It is typically caused by bacteria, viruses, or fungi. Pneumonia can lead to symptoms such as cough, chest pain, fever, and difficulty breathing. It can range in severity from mild to severe and may require hospitalization in some cases. Prompt diagnosis and treatment are essential to prevent complications and promote recovery. Antibiotics are often prescribed for bacterial pneumonia, while antiviral or antifungal medications may be used for viral or fungal pneumonia. Vaccination against certain pathogens can help prevent pneumonia. Proper hygiene practices, such as handwashing and covering the mouth when coughing or sneezing, can also reduce the risk of infection.<br>Detect the presence of Pneumonia using our application.</p>
+                              <a href="/pneumonia" class="btn btn-dark">Consult</a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="../static/icons/alzheimer1.webp" class="p-4 card-img-top img1" alt="..."  style="height: 400px;">
+                            <div class="card-body">
+                              <h5 class="card-title text-white">Alzheimer</h5>
+                              <p class="card-text text-truncate text-white" style="font-size: 17px;">
+                                Alzheimer's disease is a progressive neurological disorder that primarily affects memory, thinking, and behavior. It is the most common cause of dementia, a decline in cognitive abilities severe enough to interfere with daily life. Alzheimer's is characterized by the buildup of amyloid plaques and tau tangles in the brain, leading to the loss of nerve cells and connections. Symptoms include memory loss, confusion, difficulty with problem-solving, changes in mood or behavior, and challenges in performing familiar tasks. Currently, there is no cure for Alzheimer's disease, but treatments and interventions can help manage symptoms and improve quality of life. Ongoing research aims to understand the causes and develop effective treatments for this devastating condition.<br>Detect the presence of Alzheimer using our application.</p>
+                              <a href="/alzheimer" class="btn btn-dark">Consult</a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-100" style="width: 18rem;">
+                            <img src="../static/icons/heartdisease1.webp" class="p-4 card-img-top img1" alt="..."  style="height: 400px;">
+                            <div class="card-body">
+                              <h5 class="card-title text-white">Heart Disease</h5>
+                              <p class="card-text text-truncate text-white" style="font-size: 17px;">
+                                Heart disease refers to a range of conditions that affect the heart's structure and function. It includes conditions such as coronary artery disease, heart failure, and arrhythmias. Risk factors for heart disease include high blood pressure, high cholesterol levels, smoking, obesity, and a sedentary lifestyle. Symptoms can vary depending on the specific condition but may include chest pain, shortness of breath, fatigue, and palpitations. Prompt diagnosis and treatment are crucial in managing heart disease. Lifestyle modifications, such as a healthy diet, regular exercise, and smoking cessation, along with medication and medical procedures, are often part of the treatment plan. Public awareness and preventive measures play a vital role in reducing the incidence and impact of heart disease.<br>Our application is equipped to identify the existence of heart disease.</p>
+                              <a href="/heartdisease" class="btn btn-dark">Consult</a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <br><br><br>
+        </div>
+
+       
+
+
+       
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $('.text-truncate').hover(function () {
+              $(this).removeClass('text-truncate');
+            }, function () {
+              $(this).addClass('text-truncate');
+            });
+          });
+        </script>
+
+</body>
+
+</html>
