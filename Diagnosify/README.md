@@ -1,4 +1,4 @@
-# edoc-echanneling
+# Diagnosify Healthcare Application
 ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(1).png)
 
 Simple web project that made for e-channeling.
