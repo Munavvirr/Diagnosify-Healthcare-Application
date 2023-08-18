@@ -8,7 +8,7 @@ Diagnosify is a valuable tool that can be used to improve the early detection of
 
 A thorough booking system and an intelligent AI chatbot have also been added. Users of the booking system may quickly set up appointments with medical specialists, expediting the procedure and cutting down on waiting periods. The AI chatbot responds to users' questions about illnesses, symptoms, and medical knowledge while offering them individualized advice.
 
-Application Screenshots and Results:
+# Application Screenshots and Results:
 
 The fill-in form enables users to provide their personal details and upload their X-ray images, allowing the system to analyze the data and provide a prompt diagnosis of COVID-19 presence or absence based on the provided information.
 
